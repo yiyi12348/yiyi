@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.MaiTungTMDesign.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Colors -->
+        <item name="whiteBackgroundColor">#FFFFFFFF</item>
+        <item name="themeColor">#FF4285F4</item>
+        <item name="themeIconColor">#FF4285F4</item>
+        <item name="usableColor">#FF4CAF50</item>
+        <item name="unusableColor">#FFFF5252</item>
+        <item name="warnColor">#ffFFC107</item>
+        <item name="lineColor">#ffdddddd</item>
+        <item name="backgroundColor">#FFFFFFFF</item>
+        <item name="backgroundColorAlphaTitle">#CCFFFFFF</item>
+        <!-- Primary brand color. -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">?attr/themeColor</item>
+        <item name="colorPrimaryVariant">?attr/themeColor</item>
+        <item name="colorOnPrimary">@color/firstTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">?attr/themeColor</item>
+        <item name="colorSecondaryVariant">?attr/themeColor</item>
+        <item name="colorOnSecondary">@color/firstTextColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/backgroundColor</item>
+        <item name="android:windowLayoutInDisplayCutoutMode" >
+            shortEdges
+        </item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" >true</item>
+        <item name="colorControlNormal">@color/firstTextColor</item>
+        <!--<item name="colorControlNormal">@color/whiteTextColor</item> -->
+    </style>
+
+    <style name="AppTheme.Def" parent="Theme.MaiTungTMDesign.Light">
+        <item name="backgroundColor">@color/defaultThemeBackgroundColor</item>
+        <item name="backgroundColorAlphaTitle">@color/defaultThemeBackgroundColorAlpha80</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- color forwarding -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryVariant">?attr/themeColor</item>
+        <item name="colorOnPrimary">@color/firstTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">?attr/themeColor</item>
+        <item name="colorSecondaryVariant">?attr/themeColor</item>
+        <item name="colorOnSecondary">@color/firstTextColor</item>
+        <!-- Status bar color. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode" >
+            shortEdges
+        </item>
+        <item name="android:statusBarColor">?attr/backgroundColor</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowLightStatusBar">@bool/is_not_night_mode</item>
+        <item name="android:windowLightNavigationBar" >@bool/is_not_night_mode</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="colorControlNormal">@color/firstTextColor</item>
+        <!--<item name="colorControlNormal">@color/whiteTextColor</item> -->
+    </style>
+
+    <style name="AppTheme.Ftb" parent="AppTheme.Def">
+        <item name="colorPrimary">@color/theme_color_ftb</item>
+        <item name="colorPrimaryDark">@color/theme_color_ftb</item>
+        <item name="colorAccent">@color/theme_color_ftb</item>
+        <item name="themeColor">@color/theme_color_ftb</item>
+    </style>
+
+</resources>

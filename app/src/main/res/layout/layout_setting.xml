@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp"
+        android:backgroundTint="#FFFFFF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ouo"
+                android:textStyle="bold"
+                android:textColor="@color/firstTextColor"
+                android:textSize="30sp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="3dp"
+            android:backgroundTint="#F2F2F2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_qq_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QQ群"
+                    android:textColor="@color/aliceblue"
+                    android:textStyle="bold"
+                    app:cornerRadius="25dp"
+                    android:drawableTint="@color/white"
+                    android:backgroundTint="#00838F"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_tg_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="频道"
+                    android:textColor="@color/aliceblue"
+                    android:textStyle="bold"
+                    app:cornerRadius="25dp"
+                    android:drawableTint="@color/white"
+                    android:backgroundTint="#00838F"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_github"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GitHub"
+                    android:textColor="@color/aliceblue"
+                    android:textStyle="bold"
+                    app:cornerRadius="25dp"
+                    android:drawableTint="@color/white"
+                    android:backgroundTint="#6C6C6C"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="警告： 本模块包含高风险功能，可能导致您的QQ账号被封禁。我们不支持或鼓励使用本模块干扰他人的QQ客户端正常运行。本模块已开源，仅供学习与测试使用。\n\n此外，ouo可能存在不稳定性和安全隐患。所有功能均为强制启用，无法关闭。如果您对此有所顾虑，请立即卸载本模块。使用本模块所产生的一切风险由用户自行承担，开发者对此不承担任何责任。\n\n一般情况下，ouo不提供技术支持，若开发者心情好，可能会受理部分问题并进行优化。"
+                    android:textColor="@color/firstTextColor"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/disclaimer"
+                    android:textColor="@color/firstTextColor"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+</LinearLayout>
